@@ -11,7 +11,7 @@ function App() {
   const [filter, setFilter] = useState('');
 
   async function fetchData(){
-    const response = await axios.get('http://localhost:3001/todos')
+    const response = await axios.get('https://react-todo-list-panel.netlify.app/api')
     setTodos(response.data);
   }
 
